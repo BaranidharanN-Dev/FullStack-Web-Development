@@ -1,0 +1,64 @@
+body {
+    background-color: #092328;
+}
+
+html  {
+    font-size: 65%;
+}
+.reviewsection {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.review {
+    background-color: aliceblue;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+
+}
+
+.review> :first-child {
+    font-size: 2.4rem;
+    font-weight: 600;
+
+    margin: 0.7rem;
+
+}
+
+.review> :nth-child(2) {
+    font-size: 1.9rem;
+    font-weight: 300;
+    margin: 0.7rem;
+
+}
+
+@media (max-width:62.5rem) {
+
+ 
+html {
+    font-size: 50%;
+}
+    
+
+}
+
+
+@media (max-width:35.9rem) {
+
+   
+html {
+    font-size: 30%;
+}
+
+.reviewsection {
+    grid-template-columns: 1fr;
+}
+
+}

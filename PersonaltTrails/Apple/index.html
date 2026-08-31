@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store Online-IN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html {
+            font-size: 0.5;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+
+            background-color: white;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-family: inter, sans-serif;
+            color: #1D1D1F;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        ul>iconapple {
+            height: 0.9rem;
+            width: 0.9rem;
+        }
+
+        ul>.icon img {
+            height: 0.9rem;
+            width: 0.9rem;
+            align-items: center;
+            margin: 0;
+
+
+        }
+
+        .search {
+            height: 0.9rem;
+            width: 0.9rem;
+            align-items: center;
+            margin: 0;
+        }
+
+        .handbag {
+            height: 0.9rem;
+            width: 0.9rem;
+            align-items: center;
+            margin: 0;
+
+        }
+
+        .infohead {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            font-size: 2rem;
+            gap: 0.5rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 10%;
+            margin-left: 10%;
+            margin-bottom: 3%;
+            margin-right: 10%;
+        }
+
+        .left {
+            font-size: 5rem;
+            font-weight: 700;
+        }
+
+        .container>.right {
+            font-size: 1.7rem;
+            font-weight: 600;
+            text-align: right;
+            margin-top: 0;
+
+
+
+        }
+
+        .container>.right>.link {
+            margin-top: 20px;
+            font-size: 0.8rem;
+
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+
+
+        .productshelf {
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 10%;
+            margin-top: 0;
+            gap: 40px;
+
+
+
+
+        }
+
+        .item img {
+            height: 78px;
+            width: auto;
+        }
+
+        .item p {
+            display: flex;
+            font-family: inter, sans-serif;
+            font-size: 0.7rem;
+
+            color: black;
+            font-weight: 600;
+
+            justify-content: center;
+        }
+
+        a {
+            color: rgb(48, 175, 255);
+        }
+
+        .rack2 {
+            font-size: 1.8rem;
+            margin-left: 10%;
+            margin-top: 5%;
+            font-weight: 600;
+        }
+
+        .rack2>p>.txthigh {
+            color: grey;
+
+
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            margin: 0;
+
+
+
+
+        }
+
+        .boxes>.box1 {
+
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            margin-left: 10%;
+            color: white;
+            align-items: flex-start;
+            overflow: hidden;
+
+            padding: 30px;
+            height: 350px;
+            width: 300px;
+            border-radius: 5%;
+            flex-shrink: 0;
+
+
+        }
+
+        .boxes>.box1>img {
+            height: 400px;
+            width: 300px;
+            margin-top: -40%;
+
+
+
+
+        }
+
+        .boxes>.box1>.heading {
+            font-size: 2rem;
+            font-weight: 500;
+            margin: 0;
+            align-self: flex-start;
+            z-index: 2;
+
+        }
+
+        .boxes>.box1>.subheading {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 0;
+            margin-top: 2%;
+            align-self: flex-start;
+            z-index: 2;
+
+
+
+        }
+
+        .boxes>.box1>.des {
+            font-size: 0.8rem;
+            font-weight: 300;
+            margin: 0;
+            margin-top: 2%;
+            align-self: flex-start;
+            z-index: 2;
+
+
+
+        }
+
+        .boxes>.box2 {
+
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+
+
+            align-items: flex-start;
+            overflow: hidden;
+
+            padding: 30px;
+            height: 350px;
+            width: 300px;
+            border-radius: 5%;
+            box-shadow: 10px 10px 8px 5px #00000024;
+            flex-shrink: 0;
+
+        }
+
+        .boxes>.box2>img {
+            height: 1000px;
+            width: 340px;
+            margin-top: -45%;
+            margin-left: -10%;
+
+
+
+
+        }
+
+        .boxes>.box2>.heading {
+            font-size: 2rem;
+            font-weight: 500;
+            margin: 0;
+            align-self: flex-start;
+            z-index: 2;
+            color: black;
+
+        }
+
+        .boxes>.box2>.subheading {
+            font-size: 0.85rem;
+            font-weight: 300;
+            margin: 0;
+            margin-top: 2%;
+            align-self: flex-start;
+            z-index: 2;
+            color: black;
+            font-weight: 600;
+
+
+
+        }
+
+        .boxes>.box2>.des {
+            font-size: 0.9rem;
+            font-weight: 300;
+            margin: 0;
+            margin-top: 2%;
+            align-self: flex-start;
+            z-index: 2;
+            color: black;
+
+
+
+        }
+
+        .new {
+            color: rgb(220, 107, 2);
+            margin: 0;
+            font-size: 0.7rem;
+
+        }
+
+        .boxes>.box3 {
+
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+
+            color: white;
+            align-items: flex-start;
+            overflow: hidden;
+
+            padding: 30px;
+            height: 350px;
+            width: 300px;
+            border-radius: 5%;
+            flex-shrink: 0;
+
+
+        }
+
+        .boxes>.box3>img {
+            height: 1000px;
+            width: 340px;
+            margin-top: -45%;
+            margin-left: -5%;
+
+
+
+
+
+        }
+
+        .boxes>.box3>.heading {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin: 0;
+            align-self: flex-start;
+            z-index: 2;
+            color: white;
+
+        }
+
+        .boxes>.box3>.subheading {
+            font-size: 0.85rem;
+            font-weight: 300;
+            margin: 0;
+            margin-top: 2%;
+            align-self: flex-start;
+            z-index: 2;
+            color: white;
+            font-weight: 600;
+
+
+
+        }
+
+        .boxes>.box3>.des {
+            font-size: 0.9rem;
+            font-weight: 300;
+            margin: 0;
+            margin-top: 2%;
+            align-self: flex-start;
+            z-index: 2;
+            color: white;
+
+
+
+        }
+
+        .boxes>.box4 {
+
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+
+
+            align-items: flex-start;
+            overflow: hidden;
+            margin-left: 10%;
+            overflow: hidden;
+            gap: 20px;
+
+
+            padding: 30px;
+            height: 550px;
+            width: 450px;
+            border-radius: 5%;
+            box-shadow: 10px 10px 8px 5px #00000024;
+            flex-shrink: 0;
+
+        }
+
+        .boxes>.box4>img {
+            width: 700px;
+            margin-top: -80px;
+            margin-left: -100px;
+            margin-top: -220px;
+        }
+
+        .boxes>.box4>.heading {
+            z-index: 1;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: -10px;
+            margin-top: -10px;
+
+
+        }
+
+        .boxes>.box4>.subheading {
+            z-index: 1;
+            font-size: 0.7rem;
+        }
+
+        .boxes>.box4sub {
+
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+
+
+            align-items: flex-start;
+            overflow: hidden;
+
+            overflow: hidden;
+            gap: 20px;
+
+
+            padding: 30px;
+            height: 550px;
+            width: 450px;
+            border-radius: 5%;
+            box-shadow: 10px 10px 8px 5px #00000024;
+            flex-shrink: 0;
+
+        }
+
+        .boxes>.box4sub>img {
+            width: 700px;
+            margin-top: -80px;
+            margin-left: -100px;
+            margin-top: -200px;
+        }
+
+        .boxes>.box4sub>.heading {
+            z-index: 1;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: -10px;
+            margin-top: -20px;
+
+
+
+        }
+
+        .boxes>.box4sub>.subheading {
+            z-index: 1;
+            font-size: 0.9rem;
+            margin: 0;
+            padding: 0;
+            font-weight: 300;
+            margin-bottom: -10px;
+
+
+        }
+
+        .boxes>.box4sub>.Today {
+            z-index: 1;
+            font-size: 0.9rem;
+            padding: 0;
+            font-weight: 300;
+            margin-top: -10px;
+
+
+
+        }
+
+        .iconcontainermain {
+            display: flex;
+            margin-left: 10%;
+           
+           
+
+
+        }
+
+        .iconcontainermain>.item {
+
+            height: 170px;
+            width: 310px;
+            padding: 50px;
+            box-shadow: 10px 10px 8px 5px #00000024;
+            border-radius: 7%;
+            font-size: 1.7rem;
+            flex-shrink: 0;
+            margin-left: 20px;
+           
+            
+
+        }
+
+        
+
+        
+
+
+
+
+        .iconcontainermain .blue {
+            color: blue;
+
+        }
+
+        .iconcontainermain {
+            font-size: 1.5rem;
+            text-wrap: wrap;
+
+
+
+        }
+
+        .iconcontainermain > .item > .icon {
+            height: 60px;
+            width: 60px;
+            color:blue;
+            margin-top: -100px;
+            
+        }
+
+         .iconcontainermain > .item > .content {
+            
+            font-weight: 600;
+         }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <!--for icons-->
+
+
+    <div class="navbar">
+
+        <ul>
+            <li class="icon"><img src="./Asset/download.svg"></li>
+            <li>Store</li>
+            <li>Mac</li>
+            <li>iPad</li>
+            <li>iPhone</li>
+            <li>Watch</li>
+            <li>AirPods</li>
+            <li>Tv&Home</li>
+            <li>Entertainment</li>
+            <li>Accessories</li>
+            <li>Support</li>
+            <li><span class="search" data-lucide="search"></span></li>
+            <li><span class="handbag" data-lucide="handbag"></span></li>
+
+        </ul>
+    </div>
+
+    <!--second div start below-->
+
+    <div class="container">
+
+
+        <div class="left">
+            Store
+        </div>
+        <div class="right">
+            The best way to buy the <br> products you love.<br>
+            <div class="link">
+                <a class="anchor" href="">Connect with a Specialist ↗</a> <br>
+                <a class="anchor" href="">Find an Apple Store ↗</a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="productshelf">
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-mac-nav-202603?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=M1Q3OGxnb1lBaHhqNjZ2OVRXZmx4V2duSGVkdTVncGZYc0RnS1paU3IySCsrUlZaSVRoWVYzU0Qra0FoTmUwNi9QNXlFS1hSa1R2UkcrWjFiN21qeHJmM2dNTnRBQ1R4cGxoYkFsaEFKa1c1K1k1Y2ZhL2RsT3JqdUh6czBxZU0&traceId=1">
+            <p>Mac</p>
+        </div>
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-iphone-nav-202509?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXM1doT212VzJoWjBSKzRpbmNETHN1QjVoZlhhY1p4QWdsTjFNaGRHM3FYWWUzNFVlZmYxaVpiTW5tRlBYR0RFVkxqVW0xdm9FcDBEb25LeFNmL3Axb3d6TGNVNnVzQzF3dEJjREhKVVNZMEc&traceId=1">
+            <P>iPhone</P>
+        </div>
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXNGFLQTJVNnlNQmQrVmRBYnZYei9jckUzelNmMnRxajE0NHhmMWtLazl6eGtqQUNSY05Zb293eGJHTE9hUWczcnVqTnpaVXRhU3dOZ1ZOcTU5bHVTTkNFYWxxelhUNTl3NnJFTGlRNFh3azE&traceId=1">
+            <P>iPad</P>
+        </div>
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-watch-nav-202509?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=S0tSVzBtSkRkSFFhMm1zS1NmeWtkeUdJZTE2SHMxcG9uUER3YTRFOUZ6ckh5NTJ6cGtEemJOblBHR043ZjFkZ1FUcmZyeDQwOGFDYVkxdC9kdiszb1ErcHhBMXQwTXhDcnJUbTJ4Zkp3MHBqWkN3SHI3YWQwSmthMlF6cStyUTk&traceId=1">
+            <p>Apple Watch</p>
+        </div>
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-vision-pro-nav-202401?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=VzVpanYvTldHb05iVXFhc0xveWRLM25jd0w4dXFwc1hFbWZkNm9IcUR2bytSMWt1ZUNyTGx4SjRKL1pSL0ZDeDJzTWppUFJjbWt5c0VTSnZpSGhSZVBqOWVIcWlLZU4wTy91U1NTVlNIU25RREYzN0M5bCttdXFSOEZURjh1ODY&traceId=1">
+            <p>Apple Vision Pro</p>
+        </div>
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airpods-nav-202509?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1yMDhFUStvWHB3SDlDa3VrdUZORWRqeld1aTN5QlRYNG5PRjJxc2d1RklXbXFIMjJSU3VUZGRWY2Q0ZzZrZlVTSEVaKytVOXBFNXhUYkFYeU1LbHRXRDJCblJUU25lOTBVc1pJNFhQcHA5TlQ&traceId=1">
+            <p>AirPods</p>
+        </div>
+
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airtags-nav-202601?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1yL1FqZ2pobDV2bDUyWU1XVmNnMmx3VFd1aTN5QlRYNG5PRjJxc2d1RklXbXFIMjJSU3VUZGRWY2Q0ZzZrZlVTSEtwNS9iZlZFOXI4OVJlckErUVNlekMvZUZiN3NsZUNFZ1FxWm45dm13UTg&traceId=1">
+            <p>AirTag</p>
+        </div>
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=T0wvM1N3YUcxQ09qK0VNRkl1RU1BZFM5WnN0RmVZRmVXQ0FCUWJjbnJDald1aTN5QlRYNG5PRjJxc2d1RklXbXFIMjJSU3VUZGRWY2Q0ZzZrZlVTSERxOTBFMThSYVlJdVFBV2ZnQ1NBeVcwck5OSHpVbkpKdUFBSHBmZzRLOFM&traceId=1">
+            <p>AppleTv4K</p>
+        </div>
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=WVcvamRucHVMMWs5SXZ3bVJ3Q2hpZGR0czFXNWdCUW14eTN2U29pLzNMcld1aTN5QlRYNG5PRjJxc2d1RklXbXFIMjJSU3VUZGRWY2Q0ZzZrZlVTSE9Ob1JlMThuYVRLV29ucnpoS2dURTl4VGhFTjdSUWRqcm1rRTUvVTh5Zmk&traceId=1">
+            <p>HomePod</p>
+        </div>
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-accessories-nav-202603?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=QnhsNk96S0o4R1dkN2FveStNM1hwNzZGMHVrNGw2NTM5Vmk2bHZzMXQ3aUlac2ROMkdFNG0rMXdMQ0t2WTVlSE9LSG1uN3QySHZkem5KWlJIWEw3bnFvSHphdyszeHBObUNiNWtRSFBzM2EzaGl6dUVNYVhQZmNtZDhLWXNLU3Y&traceId=1">
+            <p>Accessories</p>
+        </div>
+        <div class="item"><img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-holiday-giftcards-asit-agc-nav-202111?wid=400&hei=260&fmt=webp-alpha&qlt=90&.v=WVcvamRucHVMMWs5SXZ3bVJ3Q2hpWWJZU3c1a04rNW9Zem5ScTRJL25qWnlvS2lBUzZZRytsa2hkcGtRYVFoZnJYVFd2aTZFN3pZenpyR0NkbGY4enRyREk0ajBYSnBNckJFaWI0aDRVWGhHMHhkT2s0alNrTGt3eU5zVDdvTzBWTGpxbjFBdlZrNCswLzM1dnVOUTVB&traceId=1">
+            <p>AppleGiftCard</p>
+        </div>
+    </div>
+
+    <div class="rack2">
+        <p>The latest. <span class="txthigh">Take a look at what’s new, right now.</span></p>
+
+    </div>
+
+    <div class="boxes">
+        <div class="box1">
+            <p class="heading">iPhone 17 Pro</p>
+            <p class="subheading">All out Pro.</p>
+            <p class="des">From $1099 or $45.79/mo.<br>
+                Lease from $31.99/mo. for 24 mo. with<br>
+                Apple Upgrade</p>
+            <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-iphone-17-pro-202509?wid=800&hei=1000&fmt=webp&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXQjVOVStZaG1ncWFjNXVUZkZ4anVIYlNab1lJcUZwSFVRK1htYlNmZUtPTFJ2R3NEUGt3Q2tTUTNWU09neHFkdWRBR0JWVHBRN0NKVm11SFZzeU45T2VCTXFJbjVIbEFUN05pTHFFYldZYzg&traceId=1">
+        </div>
+
+        <div class="box2">
+            <p class="new">NEW</p>
+            <p class="heading">MacBook Neo </p>
+            <p class="subheading">The magic of Mac at a surprising price.</p>
+            <p class="des">From $699 or $58.25/mo. for 12 mo.+</p>
+            <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-macbook-neo-202603?wid=800&hei=1000&fmt=webp&qlt=90&.v=MjhMcWJ2MGZwbXEwdnBkcUN6ZnhyMENkWWUxVnpsancwa2o0MWNIbE5maHFTRjNxbmh1UnU2R29ibGdpZUFXc25ZdDMremx3N21EQS9OQlBTRXgxeUFXa3hqWStLWVR2OTJXWDRleXhWMk1OZnVPWGRXSForVW95dWNpSkZQMzM&traceId=1">
+        </div>
+
+        <div class="box3">
+            <p class="new"> LIMITED TIME </p>
+            <p class="heading">Buy Mac or iPad with<br>
+                education savings.</p>
+
+            <p class="des"> And get a gift card from $100 to $150.° </p>
+            <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-bts-offer-featured-202607?wid=800&hei=1000&fmt=webp&qlt=90&.v=bTAvUVhobndWL01MVC9aenBVVGo5UWt3NHc3dStlS1AxQU12Y29qK3NjQS9JSk1ERHh3Ym12RXVnUFVwTDk5TWg1MCt4d0ZhbjJwNTZXbDFSKzZRbWhMM0N0akZJTzVZNGFmZFpUT0NFMnQ5Si9UN2MzemRmK2dRTTNjNHBMcWo&traceId=1">
+        </div>
+
+        <div class="box2">
+            <p class="new">NEW</p>
+            <p class="heading">iPhone 17e </p>
+            <p class="subheading">Feature stacked. Value packed.</p>
+            <p class="des">From $599 or $24.95/mo. for 24 mo.$
+                Lease from $17.99/mo. for 24 mo. with
+                Apple Upgrade°0</p>
+            <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-iphone-17e-202603?wid=800&hei=1000&fmt=webp&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXSWR4NURmaFZzeVFCV2YrK0tMRnRIam45S05qekNUdVUwMVFyK1pKaERUd3lPWjFvdU5EZVdwUnRCZ2RHSDBFS3FLdHJsdDVjbmVudndGelN0a3hvL21IaWV5SG1KWWRSb1RMSkNqUDJYZHY&traceId=1">
+        </div>
+
+    </div>
+
+    <div class="rack2">
+        <p>Help is here. <span class="txthigh">Whenever and however you need it.</span></p>
+
+    </div>
+
+    <div class="boxes">
+        <div class="box4">
+            <p class="subheading">APPLE SPECIALIST</p>
+            <p class="heading">Shop one on one with a Specialist.
+                Online or in a store.</p>
+
+
+            <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-specialist-help-202512?wid=960&hei=1000&fmt=webp&qlt=90&.v=TkJLQU9OWTZMS1N4dlhoOWl3SEhrUkxnN3NTOHN5WTV1c3NEYkc1TXhDMzcydVEyUlBCcVdrTlBkR2FhK21pbGdpcjhyQnJrZTk3NDVpVGh0RDBPL2F4QUljQmVqbVJQUjNhWWMxZDJtSUs0cGR2RlBjQW9meUMyVmRrUStsS0I&traceId=1">
+        </div>
+
+        <div class="box4sub">
+
+            <p class="heading">Shop with a Specialist over video.</p>
+            <p class="subheading">Choose your next device in a guided, one-way video
+                session.</p>
+
+
+            <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-specialist-video-202601?wid=1920&hei=2000&fmt=webp&qlt=90&.v=TkJLQU9OWTZMS1N4dlhoOWl3SEhrYnlpTHAvaU1TZWJjTXg3K2FoelBrYk5sRmNjK1N0dXBDbXowSWF0cVFwZXd6SC9lOWIwODRSMDMwTzc0S1NNM0xvNGpaZFZJNFZFOHUvR3F2MEdhRk5lSmJqN1ZaRmwxTnREUzVDL0xCQnQ&traceId=1">
+        </div>
+
+        <div class="box4sub">
+
+            <p class="Today">Today at Apple</p>
+
+            <p class="heading">Explore Apple Intelligence</p>
+            <p class="subheading">Come try it for yourself in a free session at the Apple
+                <br>Store.
+            </p>
+
+
+            <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-taa-ai-202604?wid=960&hei=1000&fmt=webp&qlt=90&.v=cFEvalhFakpZVzg4RFZsWktqbXFNYnZ0eGJDYUF3MFBoaDZXSkNFUHdVMGYzUHRVc053YldlK2NuZForb0M1V1RVbGY1Uno3Zm5uM1BxeHV2clpndUszNFJmWXBYWTFIQU9YRkJ2NlRXOFE&traceId=1">
+        </div>
+
+
+    </div>
+
+    <div class="rack2">
+        <p>The Apple Store difference. <span class="txthigh"> Even more reasons to shop with us.</span></p>
+
+    </div>
+
+    <div class="iconcontainermain">
+        
+        <div class="item"> <span class="icon" data-lucide="laptop"></span>
+           <div class="content"> <span class="blue">in your current
+                device.</span> <span>Get credit
+                toward a new one .*</span></div>
+        </div>
+
+    
+        <div class="item"> <span class="icon" data-lucide="credit-card"></span>
+           <div class="content"> <span class="blue">Pay in full, pay monthly,
+                or</span> <span>lease and upgrade at
+                the end of your term.</span></div>
+        </div>
+
+    
+        <div class="item"> <span class="icon" data-lucide="face-grinning"></span>
+           <div class="content"> <span class="blue">Make them yours.</span> <span>Engrave a mix of emoji,
+            names, and numbers
+            for free.</span></div>
+        </div> 
+
+
+
+
+
+
+
+
+
+        <script>
+            lucide.createIcons();
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+:root {
+    --BLACK:#000000;
+    --BROWN:#1F150C;
+    --BROWNDEEP:#412D15;
+    --LIGHTBROWN:#E1DCC9;
+    --SQ-SIZE: 200px;
+    --GEM:50px;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    min-height: 100vh;
+}   
+
+.header {
+    background-color:var(--BLACK);
+ .nav
+ {
+    background-color: var(--LIGHTBROWN);
+   width: 100%;
+   height: 50px;
+ }   
+}
+
+
+
+.main {
+    background-color: var(--BROWN);
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    background-color: var(--BROWNDEEP);
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --BLACK: #000000;
+--BROWN: #0B2D4D;
+--BROWNDEEP: #071A2D;
+--LIGHTBROWN: #D9EAF3;
+    }
+    
+}
+
+
+
+
+.em {
+    font-size: var(--GEM);
+}
+
+.box {
+    background-color: var(--LIGHTBROWN);
+    height: var(--SQ-SIZE);
+    width: var(--SQ-SIZE);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 10px solid rgb(244, 243, 243);
+   border-radius: 50%;
+   
+
+
+}
+
+
+.box:hover {
+    background-color: rgb(235, 8, 8);
+      height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    filter: hue-rotate(120deg)
+}
+
+.tooltip:hover::before {
+    content: "This is tool tip";
+    margin-bottom: 10%;
+    color: red;
+    background-color: black;
+    font-size: 2rem;
+}
+
+.tooltip {
+    color:blanchedalmond;
+    font-size: 2rem;
+    margin: 10%;
+}

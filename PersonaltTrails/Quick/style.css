@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+
+     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+   
+    
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    background-image: linear-gradient(rgba(156, 4, 148, 0.721),rgba(92, 3, 97, 0.485)), url(./img/multiple-colored-translucent-leaf-texture.jpg);
+    background-size: cover;
+    background-position:center, center;
+    background-attachment: fixed;
+  
+    
+   
+  
+}
+
+
+
+.box {
+  
+    margin-bottom: 30%;
+    border: 1rem solid rgb(238, 234, 234);
+    overflow: hidden;
+    height:max-content;
+    border-radius: 1em;
+}
+
+p {
+    background-color: rgb(255, 132, 189);
+    text-align: center;
+
+   
+}
+
+.tittle {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.subtittle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.subtittle:hover { 
+    color: red;
+    cursor: pointer;
+
+}
+
+.tittle:hover { 
+    color: rgb(160, 14, 14);
+    cursor: pointer;
+
+}
+
+img:hover {
+    border: 0.5em solid rgb(255, 65, 214);
+    cursor: pointer;
+}
+
+header {
+    
+    height: 80px;
+    grid-column: 1 / -1;
+    margin-bottom: 3%;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-image: linear-gradient(to right,rgba(212, 16, 212, 0.718),rgba(0, 0, 0, 0.148)),
+                        url("./img/close-up-kittens-outdoors.jpg");
+    background-position: center, center 45%;
+    background-size: cover, cover;
+    background-size: 80%, 100%;
+    
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+   background: none;
+   font-size: 4rem;
+   font-weight: 900;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   align-self: center;
+   color: rgb(238, 194, 216);
+}
+
+.logo:hover {
+    color: white;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    column-gap: 2rem;
+    background-color: black;
+    background-image: url(./img/30617.jpg);
+    background-size: cover;
+    
+    background-repeat: repeat-y;
+    padding: 2rem;
+    position: sticky;
+    top:50%;
+    border-radius: 2em;
+    margin-left: 20%;
+
+
+}
+

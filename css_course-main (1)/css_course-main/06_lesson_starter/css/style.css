@@ -1,0 +1,15 @@
+body {
+    font-size: 2rem;
+    padding: 10%;
+}
+
+/* input, button {
+    font-size: inherit;
+} */
+
+p {
+  text-indent: 2em;
+  text-align: justify;
+  line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace;
+}

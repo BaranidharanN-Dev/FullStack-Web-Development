@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            height: 600px;
+            width:1920px;
+            background-color: rgb(20, 1, 71);
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            
+            
+            align-items: center;
+            margin-top: 0;
+
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+      .item {
+        background-color: rgb(203, 196, 214);
+        width:50px;
+        
+        font-size: 4rem;
+        color: red;
+        font-weight: bold;
+        text-align: left;
+       flex-grow: 1;
+        margin: 0;
+        
+
+
+      }  
+
+          .item-3 {
+        align-self: stretch; }
+
+       .item-4{
+        align-self:stretch;
+       }
+
+       .item-1{ order:5;
+        flex-basis: 700px;
+        
+    
+
+       }
+
+       .item-2{ order:3;
+        
+
+       }
+
+       .item-3{ order:4;
+
+       }
+
+       .item-4{ order:2;
+
+       }
+
+       .item-5{ order:0;
+      
+
+       }
+
+      @media (max-width: 500px) {
+        .container {
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            background-color: white;
+            
+
+        }
+
+        .item{
+        width: 500px;
+        background-color: greenyellow;
+        margin-bottom: 10px;
+        text-align: center;
+      } 
+    
+    *{
+        margin: 0;
+        padding: 0; 
+        box-sizing: border-box;
+    }
+
+
+        
+    }
+
+
+
+
+
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="item-1 item">1</div>
+        <div class="item-2 item">2</div>
+        <div class="item-3 item">3</div> 
+        <div class="item-4 item">4</div>
+        <div class="item-5 item">5</div>
+        <div class="item-1 item">1</div>
+        <div class="item-2 item">2</div>
+        <div class="item-3 item">3</div> 
+        <div class="item-4 item">4</div>
+        <div class="item-5 item">5</div>
+    </div>
+    
+</body>
+</html>

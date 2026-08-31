@@ -1,0 +1,79 @@
+.header {
+    background-image: linear-gradient(90deg, #bebec0 0%, #ded7d9 100%);
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo { 
+    
+    
+    height: 80px;
+    width: 80px;
+    place-self: center;
+    
+    
+    
+}
+
+ul {
+    display: flex;
+    gap: 8%;
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+    
+}
+
+.nav {
+    place-self: center;
+}
+
+.getquote {
+    height: 50px;
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #f6d365;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    border: none;
+    border-radius: 50px;
+    place-self: center;
+    box-shadow: 
+    10px 10px 25px rgba(255, 165, 0, 0.35),
+    -10px -10px 25px rgba(255, 80, 80, 0.25);
+}
+
+.section2 {
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.herottl {
+    z-index: 1;
+    color: white;
+    position: absolute;
+    font-size: 2rem;
+}
+
+.overblack {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+}
+

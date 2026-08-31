@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatgpt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 20px;
+            gap: 10px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-family: 'Inter', sans-serif;
+            margin-left: 40%;
+            margin-top: 10%;
+        }
+
+        .plan-button {
+            background-color: white;
+            color: #000;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            color: grey;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-weight: 300;
+
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .icon {
+            height: 15px;
+            width: 15px;
+        }
+
+        .price>plan-button {
+            gap: 20px;
+        }
+
+        .price-value {
+            font-size: 50px;
+            font-weight: 600;
+
+        }
+
+        .planname {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+
+        .planname>.slogan {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            font-weight: 200;
+            color: #b0b4b9
+        }
+
+        .plantype {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .list>p {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .footer {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="plantype">Free</div>
+        <div class="planname">Try ChatGPT
+            <div class="slogan">See how AI can help with life and work.</div>
+        </div>
+
+        <div class="price"><span class="price-value">$0.00</span> / month</div>
+        <button class="plan-button">Your Current Plan</button>
+
+        <div class="list">
+            <p>Start with the basics:</p>
+            <ul class="list">
+                <li> <span class="icon" data-lucide="message-circle"></span> Limitedchat</li>
+                <li><span class="icon" data-lucide="images"></span>Limited access to image creation</li>
+                <li><span class="icon" data-lucide="brain"></span>Limited memory and storage</li>
+                <li><span class="icon" data-lucide="audio-lines"></span>Limited access to voice mode</li>
+                <li><span class="icon" data-lucide="megaphone"></span>Ad supported</li>
+            </ul>
+
+            <div class="footer">Have an Existing Plan? <a href="">See billing help</a>
+            </div>
+
+
+
+            <!-- Your HTML -->
+
+            <script src="https://unpkg.com/lucide@latest"></script>
+            <script>
+                lucide.createIcons();
+            </script>
+
+
+        </div>
+
+
+</body>
+
+</html>
