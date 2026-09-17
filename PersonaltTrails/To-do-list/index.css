@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#todo {
+    background-color: rebeccapurple;
+    height: 200px;
+    width: 500px;
+    color: white;
+}
+
+li {
+    color: white;
+}
