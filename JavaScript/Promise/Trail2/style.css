@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+    font-size: large;
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contact  {
+    display: flex;
+    gap: 10px;
+    margin-left: 200px;
+}
+
+.blockbox {
+    background-color: black; 
+    width: 500px;
+    display: flex; 
+    justify-content: center;
+    margin: 50vh auto;
+    height: 500px;
+}
+
+button {
+    background-color: red;
+    height: fit-content;
+    padding: 20px;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 30px;
+    align-self: center;
+
+}
