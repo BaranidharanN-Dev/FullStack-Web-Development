@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokémon Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+
+        <header class="header">
+            <h1>Pokémon Explorer</h1>
+            <p>Search and explore Pokémon</p>
+        </header>
+
+        <section class="search-box">
+            <input
+                type="text"
+                id="pokemon-input"
+                placeholder="Enter Pokémon name..."
+            >
+
+            <button id="search-btn">Search</button>
+        </section>
+
+        <p id="error-message"></p>
+
+        <section class="pokemon-card">
+
+            <div class="pokemon-image-container">
+                <img
+                    id="pokemon-image"
+                    src=""
+                    alt="Pokémon"
+                >
+            </div>
+
+            <div class="pokemon-info">
+
+                <p class="pokemon-number" id="pokemon-number">
+                    #000
+                </p>
+
+                <h2 id="pokemon-name">
+                    Pokémon
+                </h2>
+
+                <div class="types" id="pokemon-types">
+                    <!-- Types will appear here -->
+                </div>
+
+                <div class="stats">
+
+                    <div class="stat">
+                        <span>Height</span>
+                        <strong id="pokemon-height">-</strong>
+                    </div>
+
+                    <div class="stat">
+                        <span>Weight</span>
+                        <strong id="pokemon-weight">-</strong>
+                    </div>
+
+                    <div class="stat">
+                        <span>Base XP</span>
+                        <strong id="pokemon-xp">-</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="navigation">
+
+            <button id="previous-btn">
+                ← Previous
+            </button>
+
+            <button id="next-btn">
+                Next →
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
